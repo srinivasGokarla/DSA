@@ -6,7 +6,7 @@ function runProgram(input) {
        let[a,b] = input[line++].trim().split(" ").map(Number)
        const mod = 1000000007;
     const result = powerMod(a, BigInt(b), BigInt(mod));
-    console.log(result.toString());
+  //  console.log(result.toString());
     console.log(gcd(a,b)) 
     }
     
