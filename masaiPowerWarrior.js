@@ -5,33 +5,39 @@ function runProgram(input) {
     for(i = 0; i < N; i++) {
        let[a,b] = input[line++].trim().split(" ").map(Number)
        const mod = 1000000007;
-    const result = powerMod(a, BigInt(b), BigInt(mod));
-    console.log(result.toString());
-    console.log(gcd(a,b)) 
+       let g = a[0];
+       for (let j = 1; j < n; j++) {
+           g = gcd(g, a[j]);
+       }
     }
+    let product = 1;
+    for (let num of a) {
+        product = (product * num) % MOD;
+    }
+    const result = BigInt(product) ** BigInt(g) % BigInt(MOD);
+    console.log(result.toString());
     
     }
     function gcd(a,b) {
-        if(a == 0) {
-            return b
-        } else {
-            return gcd(b % a,a)
-        }
+      while (b) {
+        [a, b] = [b, a % b];
     }
-    function powerMod(a,b, mod) {
-        let result = BigInt(1);
-         let base = BigInt(a);
+    return a;
+    }
+    // function powerMod(a,b, mod) {
+    //     let result = BigInt(1);
+    //      let base = BigInt(a);
      
-         while (b > 0n) {
-             if (b % 2n === 1n) {
-                 result = (result * base) % mod;
-             }
-             base = (base * base) % mod;
-             b = b >> 1n;
-         }
+    //      while (b > 0n) {
+    //          if (b % 2n === 1n) {
+    //              result = (result * base) % mod;
+    //          }
+    //          base = (base * base) % mod;
+    //          b = b >> 1n;
+    //      }
      
-         return result;
-     }
+    //      return result;
+    //  }
     
     
     if (process.env.USERNAME === "") {
