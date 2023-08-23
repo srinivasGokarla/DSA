@@ -9,6 +9,11 @@ function runProgram(input) {
        for (let j = 1; j < n; j++) {
            g = gcd(g, a[j]);
        }
+
+    const result = powerMod(a, BigInt(b), BigInt(mod));
+  //  console.log(result.toString());
+    console.log(gcd(a,b)) 
+
     }
     let product = 1;
     for (let num of a) {
