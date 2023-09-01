@@ -31,7 +31,7 @@ function removeDuplicatesUsingFilter(arr) {
 
 console.log(removeDuplicatesUsingFilter(arr));
 
-//using reduce
+/////////using reduce
 function removeDuplicatesUsingReduce(arr) {
   return arr.reduce((accumulator, currentValue) => {
     if (!accumulator.includes(currentValue)) {
