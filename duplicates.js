@@ -12,7 +12,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 let res = [];
 for (k in obj) {
-  // console.log(k)
+   console.log(k)
   res.push(k);
 }
 
