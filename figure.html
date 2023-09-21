@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
+		<title>codedamn Lab</title>
+        <style>
+            /* Write your CSS here */
+
+#square {
+    width: 100px;
+	height: 100px;
+    background-color: black;
+}
+
+#circle {
+    width: 100px;
+	height: 100px;
+	border-radius: 50%;
+    background-color: aqua;
+
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  margin : auto;
+  margin-bottom : 20px;
+}
+.hexagon-container {
+    position: relative;
+    width: 200px; /* Adjust this value as per your requirement */
+    height: 115.47px; /* Adjust this value as per your requirement */
+  }
+  
+  .top,
+  .bottom {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+  }
+  
+  .top {
+    transform: skewY(-30deg);
+    background-color: #ff0000;
+  }
+  
+  .bottom {
+    top: calc(50% + (0.866 * inherit));
+    transform: skewY(30deg);
+    background-color: #00ff00;
+  }
+  
+  
+  
+  
+  
+        </style>
+	</head>
+	<body>
+		<!-- Create your shapes here -->
+        <div id="square"></div>
+        <div id="circle"></div>
+        <div class="triangle"></div>
+        <div class="hexagon-container">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+	</body>
+</html>
