@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Counter App Lab</title>
+    </head>
+    <body>
+        <!-- Write your HTML code here -->
+        <button id="increment-btn">Counter</button>
+        <p id="counter">0</p>
+
+        <!-- Don't forget to include the script file -->
+        <script>
+            // write your JavaScript code here
+let count = 0;
+
+let button = document.getElementById("increment-btn")
+
+let counter = document.getElementById("counter")
+
+const handleClick = () => {
+  
+   
+    if(count < 10) {
+        count++
+    } 
+    counter.innerText = count
+}
+button.addEventListener("click",handleClick)
+        </script>
+    </body>
+</html>
