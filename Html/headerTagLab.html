@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Codedamn Lab</title>
+	</head>
+	<body>
+		<!-- Create your h1 tag with id 'header' here -->
+        <h1 id ="header" style="font-size: 16px">Codedamn Lab</h1>
+
+		<!-- Create your button element with id 'toggleButton' here -->
+        <button id="toggleButton">Toggle Font Size</button>
+
+		<script >
+let button = document.getElementById("toggleButton");
+
+var text = document.getElementById("header");
+
+function handleClick(){
+    
+   if(text.style.fontSize === '16px') {
+    text.style.fontSize = "32px"
+   } else {
+    text.style.fontSize = '16px'
+   }
+}
+button.addEventListener("click", handleClick)
+        </script>
+	</body>
+</html>
