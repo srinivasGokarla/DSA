@@ -5,6 +5,7 @@ import CheckboxList from './Component/CheckBox';
 import FixSyntex from "./Component/FixSyntaxError";
 import StyledButton from "./Component/StyledButton";
 import Counter from "./Component/Counter";
+import Tabs from "./Component/TabBar"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <FixSyntex/>
     <StyledButton />
     <Counter />
+    <Tabs />
     </div>
   );
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fetch API Lab</title>
+		<script>
+            let url = "https://jsonplaceholder.typicode.com/posts/1"
+let button = document.querySelector("#fetchBtn")
+//let content = document.querySelector("#dataContainer")
+
+const handleClick = () => {
+    fetch(url).then((res) => res.json()).then((data) => {
+        document.querySelector("#dataContainer").innerHTML += `<h3>${data.title}</h3>`;
+    })
+   
+}
+button.addEventListener("click", handleClick)
+        </script>
+	</head>
+	<body>
+		<!-- Write your code here -->
+        <button id ="fetchBtn">clcik</button>
+        <div id ="dataContainer"></div>
+	</body>
+</html>
