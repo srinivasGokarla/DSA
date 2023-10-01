@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Video Tag Lab</title>
+	</head>
+	<body>
+		<!-- Create your video tag here -->
+        <video id="video" width="320" height="240" controls>
+            <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+          </video>
+          <button id="muteButton">Mute/Unmute</button>
+
+		<!-- Create your button here -->
+
+		<script >
+            // Write script to mute/unmute the video on button click
+let video = document.getElementById("video")
+let mute = document.getElementById("muteButton")
+
+
+const handleClick = () => {
+    video.muted = !video.muted
+}
+
+mute.addEventListener("click",handleClick)
+// document.getElementById('muteButton').addEventListener('click', () => {
+// 	const video = document.getElementById('video')
+// 	video.muted = !video.muted
+// })
+        </script>
+	</body>
+</html>

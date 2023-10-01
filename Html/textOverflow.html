@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text-Overflow Property Lab</title>
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
+        <style>
+            #container {
+              width: 300px;
+    
+                 }
+              #text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+
+    
+}
+        </style>
+	</head>
+	<body>
+		<div id="container">
+			<p id="text">
+				We create a Map called indexMap to store the indices of restaurants from list1.
+               We iterate through list2, check if each restaurant exists in indexMap, calculate the index sum, and compare it to the minimum index sum found so far.
+               If the index sum is smaller, we clear the result array and add the current restaurant to it.
+               If the index sum is equal to the minimum, we add the restaurant to the result array.
+               Finally, we return the result array containing common restaurants with the least index sum.
+			</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
