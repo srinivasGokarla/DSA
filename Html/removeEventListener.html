@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Remove Event Listener Lab</title>
+	</head>
+	<body>
+		<!-- Add the button and paragraph here -->
+        <button id="btn">click</button>
+        <p id="paragraph">Not clicked</p>
+		<script>
+let click = document.getElementById("btn");
+let text = document.getElementById("paragraph")
+
+
+function handleClick() {
+    text.textContent= "Button clicked once"
+    click.removeEventListener("click",handleClick)
+}
+click.addEventListener("click", handleClick)
+
+        </script>
+	</body>
+</html>
