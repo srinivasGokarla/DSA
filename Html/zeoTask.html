@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoe's To-Do App</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .completed {
+        text-decoration: line-through;
+      }
+
+      li {
+        cursor: pointer;
+      }
+
+      li:hover {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="taskInput" placeholder="New task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+      function addTask() {
+        let taskText = document.getElementById("taskInput").value;
+        if (taskText === "") return;
+
+        let li = document.createElement("li");
+        li.textContent = taskText;
+        li.addEventListener("click", markCompleted);
+
+        document.getElementById("taskList").appendChild(li);
+        document.getElementById("taskInput").value = "";
+      }
+
+      function markCompleted(event) {
+        event.target.classList.toggle("completed");
+      }
+    </script>
+  </body>
+</html>
