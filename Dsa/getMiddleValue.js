@@ -1,8 +1,4 @@
-/**
- * Returns the middle value for a given array if odd and average if even
- * @param {number[]} arr - Array of Numbers
- * @returns {number} Middle Value
- */
+
 export function getMiddleValue(arr) {
 	arr.sort((a, b) => a - b);
 
