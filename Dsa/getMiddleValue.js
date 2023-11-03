@@ -15,5 +15,5 @@ export function getMiddleValue(arr) {
 const numbers1 = [5, 3, 8, 4, 2];
 const numbers2 = [40, 20, 60, 80, 50, 30];
 
-console.log(getMiddleValue(numbers1)); // Expected Output: 4
+console.log(getMiddleValue(numbers1)); 
 console.log(getMiddleValue(numbers2)); // Expected Output: 45
