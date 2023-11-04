@@ -6,7 +6,8 @@ import FixSyntex from "./Component/FixSyntaxError";
 import StyledButton from "./Component/StyledButton";
 import Counter from "./Component/Counter";
 import Tabs from "./Component/TabBar";
-import SignUpForm from "./Component/ValidateSignUp"
+import SignUpForm from "./Component/ValidateSignUp";
+import Senwell from "./Component/Senwell";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Counter />
     <Tabs />
     <SignUpForm />
+    <Senwell />
     </div>
   );
 }
