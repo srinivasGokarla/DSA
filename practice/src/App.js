@@ -20,7 +20,7 @@ function App() {
     <Counter />
     <Tabs />
     <SignUpForm />
-    {/* <Senwell /> */}
+    <Senwell />
     </div>
   );
 }
