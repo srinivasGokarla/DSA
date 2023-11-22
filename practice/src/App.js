@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+
+
 import './App.css';
 import ProgressBar from './Component/ProgressBar';
 import CheckboxList from './Component/CheckBox';
@@ -8,6 +9,11 @@ import Counter from "./Component/Counter";
 import Tabs from "./Component/TabBar";
 import SignUpForm from "./Component/ValidateSignUp";
 import Senwell from "./Component/Senwell";
+import LoginForm from './Component/LoginForm';
+import { HomePage } from './Component/HomePage';
+import { BrowserRouter,Route,Routes} from 'react-router-dom';
+
+
 
 
 function App() {
@@ -20,7 +26,14 @@ function App() {
     <Counter />
     <Tabs />
     <SignUpForm />
-    {/* <Senwell /> */}
+    <Senwell />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <LoginForm  />}/>
+        <Route path="/Homepage" element={ <HomePage />}/>
+      </Routes>
+    </BrowserRouter>
+
     </div>
   );
 }
