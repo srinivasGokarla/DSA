@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wobble Boxes</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+    <style>
+        .box {
+	height: 75px;
+	width: 75px;
+	background-color: lightblue;
+	border-radius: 0.2rem;
+	transition: transform 0.3s ease;
+  }
+
+
+  .container {
+	background-color: yellow;
+	width: 22%;
+	border-radius: 0.3rem;
+	display: grid;
+	gap: 1.2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0.2rem 0.2rem;
+  }
+@keyframes wobble {
+	0% { transform: translateX(0); }
+	15% { transform: translateX(-10px) rotate(-5deg); }
+	30% { transform: translateX(10px) rotate(5deg); }
+	45% { transform: translateX(-10px) rotate(-5deg); }
+	60% { transform: translateX(10px) rotate(5deg); }
+	75% { transform: translateX(-10px) rotate(-5deg); }
+	100% { transform: translateX(0); }
+  }
+  .box:hover {
+	animation: wobble 1s ease infinite; /* Apply the wobble animation on hover */
+  }
+
+    </style>
+	<body>
+		<div class="container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Specificity in CSS</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+    <style>
+        .p-text {
+    color : red
+}
+p.p-text { 
+    color: green; 
+}
+    </style>
+	<body>
+		<!-- Create three paragraph elements with the class 'p-text' here -->
+		<p class="p-text">This is paragraph</p>
+		<p class="p-text" style="color: blue;">This is paragraph</p>
+		<p class="p-text" >This is paragraph</p>
+	</body>
+</html>
