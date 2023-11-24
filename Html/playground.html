@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML/CSS Practice Challenges</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+	font-familiy: "Inter", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background color: #f4f4f5;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .playground-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playground-icon {
+	height: 150px;
+	background-color: #3498db;
+  }
+  
+  .playground-info {
+	padding: 16px;
+  }
+  
+  .playground-info h4 {
+	margin: 0;
+	font-size: 18px;
+  }
+  
+  .playground-info p {
+	margin: 8px 0;
+	font-size: 14px;
+	color: #555;
+  }
+  
+  .collaborators {
+	background-color: #f0f0f0;
+	padding: 16px;
+  }
+  
+  .collaborators span {
+	font-weight: bold;
+  }
+  
+  .collaborators ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 8px 0 0;
+  }
+  
+  .collaborators li {
+	font-size: 14px;
+	color: #555;
+  }
+    </style>
+	<body>
+		<main>
+			<div class="playground-card">
+				<div class="playground-icon"></div>
+				<div class="playground-info">
+				  <h4>Playground Title</h4>
+				  <p>HTML/CSS</p>
+				  <p>Last opened: 2 hours ago</p>
+				</div>
+				<div class="collaborators">
+				  <span>Collaborators:</span>
+				  <ul>
+					<li>John Doe</li>
+					<li>Jane Doe</li>
+				  </ul>
+				</div>
+			  </div>
+		</main>
+	</body>
+</html>
