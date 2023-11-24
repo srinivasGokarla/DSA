@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Codedamn Lab</title>
+	</head>
+	<style>
+         .box:nth-child(3) {
+    column-span: all;
+}
+
+#container {
+    column-count: 2;
+    gap: 10px;
+}
+
+.box {
+    height: 100px;
+  background-color: #3498db;
+  margin-bottom: 10px;
+}
+    </style>
+	<script>
+        // write your JavaScript code here
+
+function changeColumnCount(columnCount){
+    document.getElementById("container").style.columnCount = columnCount;
+}
+changeColumnCount()
+    </script>
+	<body>
+		<!-- write your code here -->
+		<div id="container" >
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+
+		</div>
+	</body>
+</html>
