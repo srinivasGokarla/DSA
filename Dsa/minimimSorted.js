@@ -1,4 +1,3 @@
-
 function runProgram(input) {
     input = input.trim().split("\n")
   let n = Number(input[0])
