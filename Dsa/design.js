@@ -7,9 +7,9 @@ const dataArray = [
     { name: "Sophie", class: "5", skill: { one: "dancing", two: "programming" } }]
     
     
-  // const names =  dataArray.map((item) => ({
-  //     name: item.name
-  // })
+  const names =  dataArray.map((item) => ({
+      name: item.name
+  })
   
   const twoValues = dataArray.map((item) => (
       {
