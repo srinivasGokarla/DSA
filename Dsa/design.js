@@ -9,7 +9,7 @@ const dataArray = [
     
   const names =  dataArray.map((item) => ({
       name: item.name
-  })
+  }))
   
   const twoValues = dataArray.map((item) => (
       {
