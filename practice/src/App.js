@@ -14,7 +14,7 @@ import { HomePage } from './Component/HomePage';
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 import Taskadded from './Component/Taskadded';
 import React, { useState } from 'react';
-
+import ResizableLayout from "./Component/ResizableLayout"
 import TaskUpdateForm from './Component/TaskUpdateForm';
 
 import Todo from "./Component/Todo";
@@ -47,8 +47,9 @@ function App() {
         <Route path="/Homepage" element={ <HomePage />}/>
       </Routes>
     </BrowserRouter> */}
-    <Taskadded/>
-    <Todo/>
+    {/* <Taskadded/>
+    <Todo/> */}
+    <ResizableLayout />
     </div>
   );
 }
