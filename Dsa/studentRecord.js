@@ -30,5 +30,5 @@ function manipulateStudentRecord(obj, operation, prop, newValue) {
   
   // Output the result
   const sortedKeys = Object.keys(studentRecord).sort();
-  const output = sortedKeys.map(key => ${key} ${studentRecord[key]});
+ // const output = sortedKeys.map(key => ${key} ${studentRecord[key]});
   console.log(output.join(' '));
