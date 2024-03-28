@@ -18,6 +18,7 @@ import ResizableLayout from "./Component/ResizableLayout"
 import TaskUpdateForm from './Component/TaskUpdateForm';
 
 import Todo from "./Component/Todo";
+import WordSearch from './Component/WordSearch';
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
     </BrowserRouter> */}
     {/* <Taskadded/>
     <Todo/> */}
-    <ResizableLayout />
+    {/* <ResizableLayout /> */}
+    <WordSearch/>
     </div>
   );
 }
