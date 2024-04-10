@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    text-align: center;
+}
+nav .logo{
+    padding: 11px 56px;
+}
+/* header .hero-section{
+    width: 100%;
+    height: 457px;
+    background-image: url("C19\ 1.png");
+    background-position: center;
+    background-size: cover;
+} */
+
+header .hero-section {
+    height: 300px; /* Adjust height as needed */
+    background-image: url("C19\ 1.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .hero-section .text h1{
+    width: 48%;
+    padding: 77px 0 0 116px ;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+header .hero-section .text h1 span{
+    color: #FFB800;
+}
+header .hero-section .text p{
+    font-family: "Poppins", sans-serif;
+    width: 60%;
+    padding: 30px 116px;
+    font-weight: 600;
+    font-style: italic;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main .content{
+    width: 55%;
+    padding: 100px 116px;
+}
+main .content p, ul{
+    font-family: "Montserrat", sans-serif;
+}
+main .content p{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 20px 0;
+}
+main .content ul p, li{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+}
+main .form{
+    width: 525px;
+    margin-top: 100px;
+}
+main .form form{
+    border: 1px solid #C0C0C0;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
+main .form form h3{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+}
+main .form form input{
+    width: 97%;
+    padding: 16px 20px;
+    margin: 10px 0;
+    border: 1px solid #C0C0C0;
+}
+main .form form #name, #job, #size, #company, #industry{
+    width: 47%;
+    margin: 0 11px 0 0;
+}
+main .form form #term-1{
+    width: 5%;
+}
+
+main .form form button{
+    color: white;
+    background-color: #FF9A00;
+    border: none;
+    padding: 17px 5px 18px 6px;
+    width: 120px;
+    margin: 10px 0;
+}
+.image-section{
+    width: 100%;
+}
+.image-section img{
+    width: 100%;
+    margin-top: -300px;
+}
+footer {
+    width: 100%;
+    height: 220px;
+    background-color: rgba(1, 93, 132, 0.8); 
+    background-image: url(footer-img.jpeg);
+    background-position: center;
+    background-blend-mode: overlay; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #015D84; 
+    z-index: -1; 
+    opacity: 0.7; 
+}
+
+footer p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 65px 0 0 0;
+    position: relative; 
+    z-index: 1; 
+}
+
+footer span {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Tru performance logo 1.png" alt="">
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="text">
+                <h1>Tru Performance delivers <span>40%</span> Growth in Web Traffic and Multi-Million Dollar Opportunities for CDG. </h1>
+                <p>Organizations often need a better-designed website. A poorly performing website hampers conversion and revenue. </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <p>How to avoid low web traffic and conversion?</p>
+            <p> Your website is the first point of contact between your <span class="business">business</span> and your <span class="clint">clients</span> .  </p>
+
+            <ul>
+                <p>In this case study, you will understand: </p>
+                <li>
+                    The challenges faced by CDG include creating brand awareness, optimizing its website, and facilitating leads in the sales funnel. 
+                </li>
+                <li>
+                    The solutions provided by Tru Performance resolved all the pain points and maximized the potential of content magnets.
+                </li>
+                <li>
+                    The business impact of the solutions, leading to a 45% increase in the engagement rate and a 30% increase in the conversion rates. 
+                </li>
+            </ul>
+        </section>
+        <div class="form">
+            <form action="">
+                <h3>Download the Casestudy</h3>
+                <input type="text" id="name" placeholder="First Name*">
+                <input type="text" id="name" placeholder="Last Name*">
+                <input type="email" name="email" id="Email" placeholder="Email*">
+                <input type="number" id="number" placeholder="Phone Nuber">
+                <input type="text" id="c-name" placeholder="Company Name*">
+                <input type="text" id="job" placeholder="Job Title*">
+                <input type="text" id="size" placeholder="Company Size*">
+                <input type="text" id="country" placeholder="Country*">
+                <input type="text" id="Industry" placeholder="Industry*">
+                <input type="checkbox" name="term-1" id="term-1"><span>
+                    By downloading this content, you are giving permission to be contacted by a Tru Performance representative or 3rd party in regards to the content (by phone or email).
+
+                </span><br>
+                <input type="checkbox" id="term-1"><span>
+                    I agree to receive information, tips, and offers about Tru Performance products and services.
+                </span><br>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+    </main>
+    <div class="image-section">
+        <img src="Section.png" alt="">
+    </div>
+
+    <footer>
+        <p>Tru Performance: Harmonizing Data, Design, and Development for Digital Mastery </p>
+        <span>Tru Performance redefines digital landscapes by merging insightful analytics with innovative design and robust development. The transformative strategy showcased in the CDG success story enhanced user engagement and drove substantial business growth. Tru Performance is an integrated, result-oriented solutions provider for your digital needs. 
+        </span>
+    </footer>
+</body>
+</html>
