@@ -16,7 +16,7 @@ import Taskadded from './Component/Taskadded';
 import React, { useState } from 'react';
 import ResizableLayout from "./Component/ResizableLayout"
 import TaskUpdateForm from './Component/TaskUpdateForm';
-
+import Fetch from './Component/Sayali';
 import Todo from "./Component/Todo";
 import WordSearch from './Component/WordSearch';
 
@@ -51,7 +51,8 @@ function App() {
     {/* <Taskadded/>
     <Todo/> */}
     {/* <ResizableLayout /> */}
-    <WordSearch/>
+    {/* <WordSearch/> */}
+    <Fetch/>
     </div>
   );
 }
