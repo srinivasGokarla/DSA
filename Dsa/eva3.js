@@ -66,3 +66,32 @@ function Guest(name, age) {
   
   console.log(partyHost.displayInfo()); // Name: Alice, Age: 30, Role: Host
   console.log(partyHost.organizeParty()); // Party organized by Alice with role Host.
+
+
+  class Vehicle {
+    #manufacturer;
+  
+    constructor(manufacturer) {
+      this.#manufacturer = manufacturer;
+    }
+  
+    get manufacturer() {
+      return this.#manufacturer;
+    }
+  
+    set manufacturer(value) {
+      this.#manufacturer = value;
+    }
+  
+    static getManufacturer(vehicle) {
+      return vehicle.manufacturer;
+    }
+  
+    describe() {
+      return `A generic vehicle manufactured by ${this.#manufacturer}`;
+    }
+  
+    calculateAcceleration(initialVelocity, finalVelocity, time) {
+      return (finalVelocity - initialVelocity) // time;
+    }
+  }
