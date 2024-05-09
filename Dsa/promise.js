@@ -19,7 +19,7 @@ const promises = [
     })
 ];
 
-// Using Promise.all()
+// Using Promise.all()///
 Promise.all(promises)
     .then((results) => {
         console.log('All promises resolved:', results);
