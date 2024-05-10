@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Product Details</h2>
+  <div id="productDetails">
+    <h2 id="productName"></h2>
+    <img id="productImage" src="" alt="Product Image">
+    <p id="productBrand"></p>
+    <p id="productDiscount"></p>
+    <p id="productKg"></p>
+    <p id="productMRP"></p>
+    <p id="productDelivery"></p>
+  </div>
+
+  <script>
+    // Get the URL parameters
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    // Retrieve the product details from the parameters
+    const productName = urlParams.get('name');
+    const productImage = urlParams.get('imgurl');
+    const productBrand = urlParams.get('brand');
+    const productDiscount = urlParams.get('discount');
+    const productKg = urlParams.get('Kg');
+    const productMRP = urlParams.get('mrp');
+    const productDelivery = urlParams.get('dur');
+
+    // Display the product details on the page
+    document.getElementById("productName").innerText = productName;
+    document.getElementById("productImage").src = productImage;
+    document.getElementById("productBrand").innerText = "Brand: " + productBrand;
+    document.getElementById("productDiscount").innerText = "Discount: " + productDiscount;
+    document.getElementById("productKg").innerText = "Weight: " + productKg;
+    document.getElementById("productMRP").innerText = "MRP: Rs " + productMRP;
+    document.getElementById("productDelivery").innerText = "Delivery: " + productDelivery;
+  </script>
+</body>
+</html>

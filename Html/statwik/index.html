@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Sellers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="bestsellers">
+    <h2>Best Sellers</h2>
+    <hr />
+    <div id="bestsellersSlide">
+      <button onclick="scrollSlide('right')">&raquo;</button>
+      <button onclick="scrollSlide('left')">&laquo;</button>
+    </div>
+  </div>
+
+  <div id="bestsellers">
+    <h2>Checking</h2>
+    <hr />
+    <div id="bestsellersSlide">
+      <button onclick="scrollSlide('right')">&raquo;</button>
+      <button onclick="scrollSlide('left')">&laquo;</button>
+    </div>
+  </div>
+
+  <div id="productDetails" style="display: none;">
+    <h2 id="productName"></h2>
+    <img id="productImage" src="" alt="Product Image">
+    <p id="productBrand"></p>
+    <p id="productDiscount"></p>
+    <p id="productKg"></p>
+    <p id="productMRP"></p>
+    <p id="productDelivery"></p>
+  </div>
+
+  <script>
+    let array;
+
+// Fetch products from products.json
+fetch('db.json')
+  .then(response => response.json())
+  .then(data => {
+    array = data.products;
+    console.log(array);
+    renderProducts();
+  })
+  .catch(error => console.error('Error fetching products:', error));
+
+function renderProducts() {
+  let bestsellersDiv = document.getElementById("bestsellersSlide");
+  bestsellersDiv.innerHTML = "";
+
+  array.forEach((el, index) => {
+    let div = document.createElement("div");
+    div.style.minWidth = "24%";
+    let img = document.createElement("img");
+    img.src = el.imgurl;
+    img.alt = el.name;
+    img.addEventListener("click", () => showProductDetails(index));
+    let h3 = document.createElement("h3");
+    h3.innerText = el.name;
+    let p1 = document.createElement("p");
+    p1.innerText = el.brand;
+    let p2 = document.createElement("p");
+    p2.innerText = "Rs " + el.mrp;
+    let addButton = document.createElement("button");
+    addButton.innerText = "Add";
+    addButton.classList.add("addButton");
+    div.append(img, h3, p1, p2, addButton);
+    bestsellersDiv.appendChild(div);
+  });
+}
+function showProductDetails(index) {
+    let product = array[index];
+    document.getElementById("productName").innerText = product.name;
+    document.getElementById("productImage").src = product.imgurl;
+    document.getElementById("productBrand").innerText = "Brand: " + product.brand;
+    document.getElementById("productDiscount").innerText = "Discount: " + product.discount;
+    document.getElementById("productKg").innerText = "Weight: " + product.Kg;
+    document.getElementById("productMRP").innerText = "MRP: Rs " + product.mrp;
+    document.getElementById("productDelivery").innerText = "Delivery: " + product.dur;
+
+    document.getElementById("bestsellers").style.display = "none";
+    document.getElementById("productDetails").style.display = "block";
+}
+
+function scrollSlide(direction) {
+    let bestsellersSlide = document.getElementById("bestsellersSlide");
+    let scrollAmount = 300; // Adjust as needed
+
+    if (direction === "right") {
+        bestsellersSlide.scrollLeft += scrollAmount;
+    } else if (direction === "left") {
+        bestsellersSlide.scrollLeft -= scrollAmount;
+    }
+}
+
+// Call renderProducts to render initial products
+renderProducts();
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Sellers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="bestsellers1">
+    <h2>Best Sellers 1</h2>
+    <hr />
+    <div id="bestsellersSlide1">
+      <button onclick="scrollSlide('right', 'bestsellersSlide1')">&raquo;</button>
+      <button onclick="scrollSlide('left', 'bestsellersSlide1')">&laquo;</button>
+    </div>
+  </div>
+
+  <div id="bestsellers2">
+    <h2>Best Sellers 2</h2>
+    <hr />
+    <div id="bestsellersSlide2">
+      <button onclick="scrollSlide('right', 'bestsellersSlide2')">&raquo;</button>
+      <button onclick="scrollSlide('left', 'bestsellersSlide2')">&laquo;</button>
+    </div>
+  </div>
+
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
