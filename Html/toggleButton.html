@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Button</title>
+  <style>
+    /* Add some basic styles for better visibility */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .on {
+      background-color: green;
+      color: white;
+    }
+    .off {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // Initial setup
+    const rootApp = document.getElementById("root");
+    rootApp.innerHTML = '<button id="toggleButton" class="on">ON</button>';
+
+    // Function to toggle button state
+    function toggleButton() {
+      const button = document.getElementById("toggleButton");
+      if (button.textContent === "ON") {
+        button.textContent = "OFF";
+        button.classList.remove("on");
+        button.classList.add("off");
+      } else {
+        button.textContent = "ON";
+        button.classList.remove("off");
+        button.classList.add("on");
+      }
+    }
+
+    // Add event listener to the button
+    const button = document.getElementById("toggleButton");
+    button.addEventListener("click", toggleButton);
+  </script>
+</body>
+</html>
