@@ -20,6 +20,7 @@ import Fetch from './Component/Sayali';
 import Todo from "./Component/Todo";
 import WordSearch from './Component/WordSearch';
 
+import Satwik from "./Component/Satwik"
 
 function App() {
   const [selectedTask, setSelectedTask] = useState(null);
@@ -52,7 +53,8 @@ function App() {
     <Todo/> */}
     {/* <ResizableLayout /> */}
     {/* <WordSearch/> */}
-    <Fetch/>
+    {/* <Fetch/> */}
+    <Satwik/>
     </div>
   );
 }
