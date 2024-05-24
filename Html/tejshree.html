@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Click Counter</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+a.count-link {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+a.count-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p><a href="google.com" class="count-link">Click me!</a></p>
+    <script>
+     
+let count = 0;
+function updateTitle() {
+    console.log("count:", count)
+    document.title = `Count of Link Click: ${count}`;
+}
+
+function handleLinkClick(event) {
+    event.preventDefault(); 
+    count++;
+    updateTitle();
+}
+document.querySelectorAll('a.count-link').forEach(link => {
+    link.addEventListener('click', handleLinkClick);
+});
+
+    </script>
+</body>
+</html>
