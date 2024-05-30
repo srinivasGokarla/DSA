@@ -19,6 +19,7 @@ import TaskUpdateForm from './Component/TaskUpdateForm';
 import Fetch from './Component/Sayali';
 import Todo from "./Component/Todo";
 import WordSearch from './Component/WordSearch';
+import LinkClickCounter from './Component/Tejshree'
 
 import Satwik from "./Component/Satwik"
 
@@ -54,7 +55,8 @@ function App() {
     {/* <ResizableLayout /> */}
     {/* <WordSearch/> */}
     {/* <Fetch/> */}
-    <Satwik/>
+    {/* <Satwik/> */}
+    <LinkClickCounter/>
     </div>
   );
 }
